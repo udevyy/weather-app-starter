@@ -129,7 +129,7 @@ async function fetchWeather() {
             mainBody.style.backgroundImage = "url(/bg2.jpg)";
         }
 
-        if (dataTrimmed == "brokenclouds" || dataTrimmed == "fewclouds" || dataTrimmed == "overcastclouds") {
+        if (dataTrimmed == "brokenclouds" || dataTrimmed == "fewclouds" || dataTrimmed == "overcastclouds" || dataTrimmed == "moderaterain") {
                 imageSource.src = `../icons/cloud.png`;
             } else {
                 imageSource.src = `../icons/${dataTrimmed}.png`
