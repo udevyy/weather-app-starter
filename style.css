@@ -59,6 +59,7 @@ main {
   bottom: 10px;
   text-align: center;
   color: white;
+  z-index: 5;
 } 
 
 h1 {
