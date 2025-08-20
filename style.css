@@ -60,7 +60,7 @@ main {
   text-align: center;
   color: white;
   z-index: 5;
-} 
+}
 
 h1 {
   background: linear-gradient(var(--fillColor), var(--accentColor));
