@@ -62,6 +62,12 @@ main {
   z-index: 5;
 }
 
+#footer > a {
+  background: linear-gradient(var(--fillColor), var(--accentColor));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1 {
   background: linear-gradient(var(--fillColor), var(--accentColor));
   background-clip: text;
