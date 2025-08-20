@@ -4,4 +4,6 @@ This entire repo is a mess, but that is on purpose. There's not much optimizatio
 It is simply a little fun project to get weather data from user-input with an okay-ish look.<br>
 None of the images have been sorted, except for the icons. None of the images have been truly optimized to be as performant as possible.<br><br>
 
-Credit where credit is due, though: <a target="_blank" href="https://icons8.com/icons/set/weather--style-nolan">Weather icons</a> made by <a target="_blank" href="https://icons8.com">Icons8</a>
+Credit where credit is due, though:<br> 
+<a target="_blank" href="https://icons8.com/icons/set/weather--style-nolan">Weather icons</a> made by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a href="https://www.flaticon.com/free-icons/fever" title="fever icons">Fever icons created by Freepik - Flaticon</a>
