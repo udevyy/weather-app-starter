@@ -62,10 +62,26 @@ main {
   z-index: 5;
 }
 
-#footer > a {
+.footer-link {
   background: linear-gradient(var(--fillColor), var(--accentColor));
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(var(--fillColor), var(--accentColor));
+}
+
+.footer-link::before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  z-index: 1;
+  border-radius: 15px;
+  background: #191919;
 }
 
 h1 {
@@ -79,9 +95,9 @@ h2 {
 }
 
 input {
-    border: none;
-    padding: 25px;
-    border-radius: 15px;
+  border: none;
+  padding: 25px;
+  border-radius: 15px;
 }
 
 button {
