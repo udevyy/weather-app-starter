@@ -5,5 +5,5 @@ It is simply a little fun project to get weather data from user-input with an ok
 None of the images have been sorted, except for the icons. None of the images have been truly optimized to be as performant as possible.<br><br>
 
 Credit where credit is due, though:<br> 
-<a target="_blank" href="https://icons8.com/icons/set/weather--style-nolan">Weather icons</a> made by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a href="https://www.flaticon.com/free-icons/fever" title="fever icons">Fever icons created by Freepik - Flaticon</a>
+<a target="_blank" href="https://icons8.com/icons/set/weather--style-nolan">Weather icons</a> made by <a target="_blank" href="https://icons8.com">Icons8</a> for all the icons except for:<br>
+<a href="https://www.flaticon.com/free-icons/fever" title="fever icons">Fever icons created by Freepik - Flaticon</a> which is the temperature icon used in the triple hero section
