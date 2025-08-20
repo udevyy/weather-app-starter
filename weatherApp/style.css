@@ -53,6 +53,12 @@ main {
   color: #ebebeb;
 }
 
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
 h1 {
   background: linear-gradient(var(--fillColor), var(--accentColor));
   background-clip: text;
