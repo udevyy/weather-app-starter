@@ -150,7 +150,7 @@ async function fetchWeather() {
         windInfo.innerHTML = `The wind speed for today sits at roughly <strong>${data.wind.speed}m/s.</strong><br>That is equal to <strong>${Math.round(data.wind.speed * mphFactor)}mph</strong>, or <strong>${Math.round(data.wind.speed * 3.6)}km/h.</strong>`;
 
         pressureInfo.innerHTML = `The atmospheric pressure for <strong>${data.name}</strong> sits at <strong>${data.main.pressure / 100} Pascal</strong>.`;
-        timezoneInfo.innerHTML = `The timezone in <strong>${data.name}</strong> shifts by <strong>${data.timezone}</strong> seconds.<br>That puts it in the `;
+        timezoneInfo.innerHTML = `The timezone in <strong>${data.name}</strong> shifts by <strong>${data.timezone}</strong> seconds, <strong>${data.timezone / 60} minutes, or ${(data.timezone / 60) / 60} hours.<br>`;
         
         
         
