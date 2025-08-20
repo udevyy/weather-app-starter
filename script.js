@@ -23,10 +23,11 @@ addEventListener("resize", (event) => {
     }
 })
 
+
+// if enter key used, start fetching
 searchbar.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
         fetchWeather();
-        console.log(e.key);
     }
 })
 
@@ -107,15 +108,17 @@ async function fetchWeather() {
             </div>  
         `;
 
-
+        // on-screen humidity count-up prep
         let onpageHumidity = document.getElementById("humidity-levels");
         const originalHumidity = onpageHumidity.textContent;
         let counterUp = 0;
 
+        // sleep function for non-instant count up for humidity
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
         
+        // changing images based on weather data, if no match default fallback
         let imageSource = document.getElementById("description-icon");
         let dataString = data.weather[0].description;
         let dataTrimmed = dataString.replace(/\s+/g, '').toLowerCase();
@@ -153,7 +156,8 @@ async function fetchWeather() {
         timezoneInfo.innerHTML = `The timezone in <strong>${data.name}</strong> shifts by <strong>${data.timezone}</strong> seconds, <strong>${data.timezone / 60} minutes, or ${(data.timezone / 60) / 60} hours.<br>`;
         
         
-        
+        /* finally, count up for humidity is being used. moved further back to not interfere with promptly changing the backgrounds.
+        stalled background-change until count-up was done, due to loop.*/
         while (counterUp <= originalHumidity) {
             onpageHumidity.innerHTML = `${counterUp}`;
             for (let i = 0; i < originalHumidity; i++) {
