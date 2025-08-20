@@ -131,7 +131,7 @@ async function fetchWeather() {
 
         if (dataTrimmed == "brokenclouds" || dataTrimmed == "fewclouds" || dataTrimmed == "overcastclouds") {
                 imageSource.src = `../icons/cloud.png`;
-            } else if (dataTrimmed == "moderaterain") {
+            } else if (dataTrimmed == "moderaterain" || dataTrimmed == "heavyintensityrain") {
                 imageSource.src = '../icons/cloudrain.png';
             } else {
                 imageSource.src = `../icons/${dataTrimmed}.png`
