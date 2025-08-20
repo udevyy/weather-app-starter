@@ -121,7 +121,7 @@ async function fetchWeather() {
         let dataTrimmed = dataString.replace(/\s+/g, '').toLowerCase();
         console.log(dataTrimmed);
         if (descriptionArray.includes(data.weather[0].description)) {
-            mainBody.style.backgroundImage = "url(../" + dataTrimmed + ".jpg)";
+            mainBody.style.backgroundImage = "url(../weatherApp/" + dataTrimmed + ".jpg)";
         } else if (!descriptionArray.includes(data.weather[0].description)) {
             mainBody.style.backgroundImage = "url(/bg2.jpg)";
         }
